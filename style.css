@@ -1,0 +1,82 @@
+.container{
+	padding: 20px;
+}
+body{
+	color: whitesmoke;
+}
+.box{
+	padding: 20px;
+	margin: 60px auto;
+	background: teal;
+	border-radius: 5px;
+	position: relative;
+}
+
+.box::after{
+	content: "";
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	background: teal;
+	transform: rotate(45deg);
+	z-index: -4;
+}
+
+.box h2{
+	color: whitesmoke;
+}
+
+.title h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.address{
+	color: whitesmoke;
+	background: cyan;
+}
+
+.address::after{
+	content: "";
+	background: cyan;
+
+}
+
+.address p a{
+	text-decoration: none;
+	color: blue;
+}
+
+.title{
+	background: orange;
+}
+
+.title::after{
+	content: "";
+	background: orange;
+}
+
+.img{
+	width: 150px;
+	padding: 0;
+	position: absolute;
+	top: 65px;
+	right: 60px;
+}
+
+.img img{
+	width: 100%;
+}
+
+.objective p{
+	line-height: 1.5em;
+}
+
+.training::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+}
