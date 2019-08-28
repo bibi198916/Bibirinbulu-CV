@@ -28,11 +28,6 @@ body{
 	color: whitesmoke;
 }
 
-.title h1{
-	text-transform: uppercase;
-	text-align: center;
-}
-
 .address{
 	color: whitesmoke;
 	background: cyan;
@@ -53,9 +48,18 @@ body{
 	background: orange;
 }
 
+.title h1{
+	text-transform: uppercase;
+	text-align: center;
+}
+
 .title::after{
 	content: "";
 	background: orange;
+}
+
+.skill ul li{
+	margin: 10px auto;
 }
 
 .img{
@@ -80,3 +84,25 @@ body{
 	width: 0;
 	height: 0;
 }
+
+/* CSS
+
+
+
+Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of web-pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.
+
+
+
+CSS have help me to make my HTML document look attractive and Uniform across browsers. CSS.
+
+
+
+From the screenshot below, css did allow me to format my document to uniform layout while add stylying like colors, background-color, rounded border, padding, margin etc
+
+
+
+Stands for "Cascading Style Sheet." Cascading style sheets are used to format the layout of Web pages. They can be used to define text styles, table sizes, and other aspects of Web pages that previously could only be defined in a page's HTML.
+ */
+
+
+﻿
