@@ -90,9 +90,24 @@ body{
 	line-height: 1.5em;
 }
 
+.certification::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
 .training::after{
 	content: "";
 	position: absolute;
 	width: 0;
 	height: 0;
+}
+
+
+
+@media(max-width: 700px){
+	.container{
+		grid-template-columns: 1fr;
+	}
 }
