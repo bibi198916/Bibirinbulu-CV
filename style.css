@@ -1,5 +1,8 @@
 .container{
 	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
 }
 body{
 	color: whitesmoke;
@@ -10,6 +13,8 @@ body{
 	background: teal;
 	border-radius: 5px;
 	position: relative;
+	width: 90%;
+	margin: 0, 20px;
 }
 
 .box::after{
@@ -31,6 +36,13 @@ body{
 .address{
 	color: whitesmoke;
 	background: cyan;
+}
+
+.img::after{
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
 }
 
 .address::after{
