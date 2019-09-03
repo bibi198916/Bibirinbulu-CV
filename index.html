@@ -3,34 +3,42 @@
 
 <head>
 	<title>Bibirinbulu Aremieye CV</title>
+	<!-- fontawesome icons link -->
+	<title>Sign Up</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="../Bibirinbulu-CV/style.css">
+
+	<!-- My CSS link -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 
-	<div class="container">
-		<!-- Address Table row section -->
-		<div class="address box">
+
+	<!-- Address Table row section -->
+	<div class="address box">
+		<div class="add">
 			<h3>Akenfa III, Ken-Kiama Street</h3>
 			<p>Yenagoa, Bayelsa State</p>
 			<p>+2348165025176</p>
 			<p><a href="bibiaremieye@gmail.com">bibiaremieye@gmail.com</a></p>
 		</div>
-
-
-
-		<!-- Name Title Table row section -->
-		<div class="title box">
-			<h1>Aremieye Bibirinbulu</h1>
-			<!-- <hr> -->
-		</div>
-
 		<!-- My Image -->
-		<div class="img box">
+		<div class="img">
 			<img src="https://res.cloudinary.com/bibi1989/image/upload/c_scale,h_400,w_500/v1566551283/bibi_eek592.jpg"
 				alt="Bibi Image">
 		</div>
+	</div>
 
 
+	<!-- Name Title Table row section -->
+	<div class="title box">
+		<h1>Aremieye Bibirinbulu</h1>
+		<!-- <hr> -->
+	</div>
+
+	<div class="container">
 		<!-- Objective Table row section -->
 		<div class="objective box">
 			<h2>OBJECTIVE</h2>
@@ -38,6 +46,16 @@
 				solar installation, motor automation and a year experience in web development, proficient in HTML,
 				CSS and JavaScript. Seeking a new role with responsibilities in order to make progress with my
 				career.</p>
+		</div>
+
+		<div class="skill box">
+			<h2>Skills</h2>
+			<ul>
+				<li>proficient In HTML and CSS</li>
+				<li>Junior JavaScript Developer</li>
+				<li>Team Player</li>
+				<li>Analytical Skills</li>
+			</ul>
 		</div>
 
 		<!-- Experience Table Section -->
@@ -79,12 +97,12 @@
 
 		<div class="education box">
 			<h2>EDUCATION</h2>
-			<div>
+			<div class="university">
 				<h3>Niger Delta University, Amassoma, Bayelsa State - <i>B.Eng Mechanical Engineering</i></h3>
 				<p>OCTOBER 2006 - SEPTEMBER 2011</p>
 			</div>
 
-			<div>
+			<div class="secondary">
 				<h3>Federal Government College, Odi, Bayelsa State - <i>West Africa Examination Council (WAEC)</i>
 				</h3>
 				<p>OCTOBER 2000 - MAY 2006</p>
@@ -108,6 +126,44 @@
 			<p>Smart Electrical Engineering Training Program</p>
 		</div>
 	</div>
+
+	<!-- Contact Form section -->
+	<div class="form">
+		<form>
+			<h1>Contact Me</h1>
+			<span class="require">*</span>
+			<div class="name">
+				<i class="fas fa-user"></i>
+				<input type="text" id="name" placeholder="Names">
+			</div>
+			
+			<span class="require">*</span>
+			<div class="email">
+				<i class="fas fa-envelope"></i>
+				<input type="text" id="email" placeholder="E-mail">
+			</div>
+	
+			<span class="require">*</span>
+			<div class="titles">
+				<i class="fas fa-book"></i>
+				<input type="text" id="title" placeholder="Title">
+			</div>
+			
+			<span class="require">*</span>
+			<div class="msg">
+				<i class="fas fa-envelope-open-text"></i>
+				<input type="text" id="message" placeholder="Message...">
+			</div>
+
+			<div class="button">
+				<i class="fas fa-arrow-right"></i>
+				<button type="submit">Submit</button>
+			</div>
+			<div class="success"></div>
+		</form>
+	</div>
+
+	<script src="../Bibirinbulu-CV/main.js"></script>
 
 </body>
 
