@@ -59,12 +59,15 @@ body {
 
 .img {
   width: 150px;
+  height: 150px;
   padding: 0;
   justify-self: flex-end;
 }
 
 .img img {
-  width: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .address p a {
