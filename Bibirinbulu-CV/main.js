@@ -18,7 +18,8 @@ function formValidation(e) {
   ) {
     alert("Fields are empty");
   } else {
-    if (name.value.length < 4) {
+    let test = name.value.length < 4 || Number.isNaN(name.value);
+    if (test) {
       alert("Name must be atleast 4 characters");
       name.style.borderBottom = `2px solid red`;
     } else {
@@ -30,7 +31,7 @@ function formValidation(e) {
           alert("Message must be atleast 20 characters");
           message.style.borderBottom = `2px solid red`;
         } else {
-          successMessage(success);
+          alert("Submitted Successfully!!!");
           successBorderNotificating(name, email, title, message);
           emptyFields(name, email, title, message);
         }
@@ -43,14 +44,6 @@ function formValidation(e) {
 function validateEmail(element) {
   var re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
   return re.test(element);
-}
-
-// Success Message
-function successMessage(element) {
-  element.style.opacity = "1";
-  element.innerHTML = "Successful!!!";
-  element.style.background = "green";
-  element.style.color = "white";
 }
 
 // Styling the border green when successful
