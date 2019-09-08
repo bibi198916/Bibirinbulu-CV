@@ -57,6 +57,21 @@ body {
   padding-bottom: 10px;
 }
 
+.icon {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.icon p {
+  margin-left: 29px;
+  padding-top: 10px;
+}
+
+.icon img {
+  width: 30px;
+}
+
 .img {
   width: 150px;
   height: 150px;

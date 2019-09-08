@@ -7,8 +7,8 @@ const success = document.querySelector(".success");
 
 form.addEventListener("submit", formValidation);
 
-function formValidation(e) {
-  e.preventDefault();
+function formValidation() {
+  // e.preventDefault();
   let newEmail = email.value;
   if (
     name.value == "" ||
@@ -19,6 +19,7 @@ function formValidation(e) {
     alert("Fields are empty");
   } else {
     let test = name.value.length < 4 || Number.isNaN(name.value);
+    console.log(test);
     if (test) {
       alert("Name must be atleast 4 characters");
       name.style.borderBottom = `2px solid red`;
